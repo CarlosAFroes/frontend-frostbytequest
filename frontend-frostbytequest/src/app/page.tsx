@@ -7,7 +7,7 @@ export default function Home() {
           Carlos Froes
         </h1>
         <p className="text-xl text-gray-400 mb-8">
-          Software Engineer · Microsoft · Montréal
+          Software Developer · Microsoft · Montréal
         </p>
         <div className="flex justify-center gap-4">
           <a
