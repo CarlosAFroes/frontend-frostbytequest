@@ -80,7 +80,7 @@ export default function MemoryGame() {
 
   const handleClick = (id: number) => {
     if (locked || won) return
-    const card = cards[id]
+    const card = cards.find(c => c.id === id)!
     if (card.flipped || card.matched) return
 
     if (!running) setRunning(true)
@@ -95,7 +95,7 @@ export default function MemoryGame() {
       setMoves(m => m + 1)
       setLocked(true)
       const [a, b] = newSelected
-      if (next[a].iconIndex === next[b].iconIndex) {
+      if (next.find(c => c.id === a)!.iconIndex === next.find(c => c.id === b)!.iconIndex) {
         const matched = next.map(c =>
           c.id === a || c.id === b ? { ...c, matched: true } : c
         )
