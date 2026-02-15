@@ -7,26 +7,8 @@ export default function Home() {
           Carlos Froes
         </h1>
         <p className="text-xl text-gray-400 mb-8">
-          Software Developer · Microsoft · Montréal
+          Software Developer · Montréal
         </p>
-        <div className="flex justify-center gap-4">
-          <a
-            href="https://github.com/CarlosAFroes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors text-sm font-medium"
-          >
-            GitHub →
-          </a>
-          <a
-            href="https://linkedin.com/in/carlosfroes"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 rounded-lg bg-cyan-600 hover:bg-cyan-500 transition-colors text-sm font-medium"
-          >
-            LinkedIn →
-          </a>
-        </div>
       </section>
 
       {/* Sections */}
