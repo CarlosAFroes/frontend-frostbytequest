@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Home() {
   return (
     <div className="relative max-w-6xl mx-auto px-6 overflow-hidden">
@@ -27,12 +29,12 @@ export default function Home() {
 
       {/* Sections */}
       <section className="relative py-16 grid md:grid-cols-3 gap-8">
-        <div className="p-6 rounded-xl border border-gray-800 hover:border-cyan-800 transition-colors">
+        <Link href="/games" className="p-6 rounded-xl border border-gray-800 hover:border-cyan-800 transition-colors">
           <h2 className="text-lg font-semibold mb-2">🎮 Games</h2>
           <p className="text-sm text-gray-400">
             Browser-based games and interactive experiments.
           </p>
-        </div>
+        </Link>
         <div className="p-6 rounded-xl border border-gray-800 hover:border-cyan-800 transition-colors">
           <h2 className="text-lg font-semibold mb-2">💼 Projects</h2>
           <p className="text-sm text-gray-400">
